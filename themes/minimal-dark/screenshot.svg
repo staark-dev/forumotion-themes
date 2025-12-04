@@ -1,7 +1,7 @@
 <svg viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
   <rect width="1280" height="800" fill=""/>
   
-  <g transform="translate(240, 200)">
+  <g transform="">
     <!-- Card background with rounded corners -->
     <rect width="1280" height="800" rx="24" fill="url(#gradient1)"/>
     
