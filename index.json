@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "ips",
+      "name": "IPS Inspired",
+      "description": "Tema în stil IPS 4/5 pentru Forumotion.",
+      "path": "themes/ips/manifest.json",
+      "screenshot": "themes/ips/screenshot.png",
+      "tags": ["modern", "ips", "light"],
+      "minEngine": "Invision"
+    },
+    {
+      "id": "xenforo-like",
+      "name": "XenForo-like",
+      "description": "Layout similar XenForo cu forum list clasic.",
+      "path": "themes/xenforo-like/manifest.json",
+      "screenshot": "themes/xenforo-like/screenshot.png",
+      "tags": ["xenforo", "classic"],
+      "minEngine": "phpBB3"
+    },
+    {
+      "id": "minimal-dark",
+      "name": "Minimal Dark",
+      "description": "Temă întunecată, simplă, pentru forumuri mici.",
+      "path": "themes/minimal-dark/manifest.json",
+      "screenshot": "themes/minimal-dark/screenshot.png",
+      "tags": ["dark", "minimal"],
+      "minEngine": "phpBB3"
+    }
+  ]
+}
