@@ -1,9 +1,11 @@
 <svg viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1280" height="800" fill=""/>
+  <!-- Background -->
+  <rect width="1280" height="800" fill="#f5f5f5"/>
   
-  <g transform="">
+  <!-- Main card container -->
+  <g transform="translate(240, 200)">
     <!-- Card background with rounded corners -->
-    <rect width="1280" height="800" rx="24" fill="url(#gradient1)"/>
+    <rect width="800" height="400" rx="24" fill="url(#gradient1)"/>
     
     <!-- Gradient definitions -->
     <defs>
