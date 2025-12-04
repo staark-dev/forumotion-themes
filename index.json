@@ -15,7 +15,7 @@
       "name": "XenForo-like",
       "description": "Layout similar XenForo cu forum list clasic.",
       "path": "themes/xenforo-like/manifest.json",
-      "screenshot": "themes/xenforo-like/screenshot.png",
+      "screenshot": "themes/xenforo-like/screenshot.svg",
       "tags": ["xenforo", "classic"],
       "minEngine": "phpBB3"
     },
@@ -24,7 +24,7 @@
       "name": "Minimal Dark",
       "description": "Temă întunecată, simplă, pentru forumuri mici.",
       "path": "themes/minimal-dark/manifest.json",
-      "screenshot": "themes/minimal-dark/screenshot.png",
+      "screenshot": "themes/minimal-dark/screenshot.svg",
       "tags": ["dark", "minimal"],
       "minEngine": "phpBB3"
     }
