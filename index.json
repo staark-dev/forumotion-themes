@@ -6,7 +6,7 @@
       "name": "IPS Inspired",
       "description": "Tema în stil IPS 4/5 pentru Forumotion.",
       "path": "themes/ips/manifest.json",
-      "screenshot": "themes/ips/screenshot.png",
+      "screenshot": "themes/ips/screenshot.svg",
       "tags": ["modern", "ips", "light"],
       "minEngine": "Invision"
     },
