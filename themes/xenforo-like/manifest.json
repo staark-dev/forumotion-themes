@@ -1,1 +1,90 @@
+{
+  "id": "xenforo-like",
+  "name": "XenForo-like",
+  "version": "1.0.0",
+  "author": "Staark",
+  "description": "Layout similar XenForo cu forum list clasic.",
+  "tags": ["xenforo", "classic"],
+  "minEngine": "phpBB3",
+  "screenshot": "themes/xenforo-like/screenshot.svg",
+  "lastUpdate": "2025-01-15T00:00:00Z",
 
+  "files": {
+    "css": [
+      {
+        "id": "main",
+        "label": "Main CSS",
+        "file": "css/main.css",
+        "target": "global_stylesheet"
+      }
+    ],
+
+    "js": [],
+
+    "templates": [
+      {
+        "id": "overall_header",
+        "label": "Overall Header",
+        "file": "template/overall_header.html",
+        "mode": "replace"
+      },
+      {
+        "id": "overall_footer_begin",
+        "label": "Overall Footer Begin",
+        "file": "template/overall_footer_begin.html",
+        "mode": "replace"
+      },
+      {
+        "id": "overall_footer_end",
+        "label": "Overall Footer End",
+        "file": "template/overall_footer_end.html",
+        "mode": "replace"
+      },
+      {
+        "id": "index_body",
+        "label": "Index Body",
+        "file": "template/index_body.html",
+        "mode": "replace"
+      },
+      {
+        "id": "index_box",
+        "label": "Forums List",
+        "file": "template/index_box.html",
+        "mode": "replace"
+      },
+      {
+        "id": "viewforum_body",
+        "label": "Viewforum Body",
+        "file": "template/viewforum_body.html",
+        "mode": "replace"
+      },
+      {
+        "id": "viewtopic_body",
+        "label": "Viewtopic Body",
+        "file": "template/viewtopic_body.html",
+        "mode": "replace"
+      }
+    ],
+
+    "widgets": [
+      {
+        "id": "top_posters",
+        "label": "Top Posters Widget",
+        "file": "sidebar/top_posters.html",
+        "targetMarker": "sidebar_widgets",
+        "mode": "append"
+      },
+      {
+        "id": "recent_topics",
+        "label": "Recent Topics Widget",
+        "file": "sidebar/recent_topics.html",
+        "targetMarker": "sidebar_widgets",
+        "mode": "append"
+      }
+    ]
+  },
+
+  "changelog": [
+    "- 1.0.0: Prima versiune XenForo-like."
+  ]
+}

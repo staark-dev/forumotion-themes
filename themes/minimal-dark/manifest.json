@@ -1,1 +1,65 @@
+{
+  "id": "minimal-dark",
+  "name": "Minimal Dark",
+  "version": "1.0.0",
+  "author": "Staark",
+  "description": "Temă întunecată, simplă, pentru forumuri mici.",
+  "tags": ["dark", "minimal"],
+  "minEngine": "phpBB3",
+  "screenshot": "themes/minimal-dark/screenshot.svg",
+  "lastUpdate": "2025-01-15T00:00:00Z",
 
+  "files": {
+    "css": [
+      {
+        "id": "main",
+        "label": "Main CSS",
+        "file": "css/main.css",
+        "target": "global_stylesheet"
+      }
+    ],
+
+    "js": [],
+
+    "templates": [
+      {
+        "id": "overall_header",
+        "label": "Overall Header",
+        "file": "template/overall_header.html",
+        "mode": "replace"
+      },
+      {
+        "id": "overall_footer_end",
+        "label": "Overall Footer End",
+        "file": "template/overall_footer_end.html",
+        "mode": "replace"
+      },
+      {
+        "id": "index_body",
+        "label": "Index Body",
+        "file": "template/index_body.html",
+        "mode": "replace"
+      },
+      {
+        "id": "index_box",
+        "label": "Forums List",
+        "file": "template/index_box.html",
+        "mode": "replace"
+      }
+    ],
+
+    "widgets": [
+      {
+        "id": "footer_widgets",
+        "label": "Footer Widgets",
+        "file": "blocks/footer_widgets.html",
+        "targetMarker": "footer_widgets",
+        "mode": "append"
+      }
+    ]
+  },
+
+  "changelog": [
+    "- 1.0.0: Prima versiune Minimal Dark."
+  ]
+}
