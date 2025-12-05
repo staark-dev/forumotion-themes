@@ -1,7 +1,7 @@
 {
   "id": "ips",
   "name": "IPS Inspired v2.1",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Staark",
   "description": "Tema în stil IPS 4.5.x pentru Forumotion.",
   "tags": ["modern", "ips", "light"],
@@ -125,7 +125,15 @@
     }]
   },
 
-  "changelog": [
-    "- 1.0.0: Prima versiune IPS Inspired."
+"changelog": [
+    "- 1.0.3: Refăcut complet sistemul de dropdown pentru o experiență mai fluidă",
+    "- 1.0.3: Adăugat suport pentru avatare în notificări și mesaje private",
+    "- 1.0.3: Reproiectat pluginurile whoIsOnline și Forum Stats cu design îmbunătățit",
+    "- 1.0.3: Optimizări de performanță pentru încărcarea mai rapidă a temei",
+    "- 1.0.3: Îmbunătățiri la responsive design pentru dispozitive mobile",
+    "- 1.0.3: Corectate probleme de compatibilitate cu ultimele versiuni Forumotion",
+    "- 1.0.2: Adăugat noul sistem custom de notificări",
+    "- 1.0.1: Adăugat un nou modul pentru administrare",
+    "- 1.0.0: Prima versiune IPS Inspired"
   ]
 }
