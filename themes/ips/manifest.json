@@ -1,1 +1,99 @@
+{
+  "id": "ips",
+  "name": "IPS Inspired",
+  "version": "1.0.0",
+  "author": "Staark",
+  "description": "Tema în stil IPS 4/5 pentru Forumotion.",
+  "tags": ["modern", "ips", "light"],
+  "minEngine": "Invision",
+  "screenshot": "themes/ips/screenshot.svg",
+  "lastUpdate": "2025-12-05T00:00:00Z",
 
+  "files": {
+    "css": [{
+        "id": "main",
+        "label": "Main CSS",
+        "file": "css/main.css",
+        "target": "global_stylesheet"
+    }],
+
+    "js": [],
+
+    "templates": [{
+        "id": "overall_header",
+        "label": "Overall Header",
+        "file": "templates/overall_header.html",
+        "mode": "replace" 
+      }, {
+        "id": "overall_footer_end",
+        "label": "Overall Footer End",
+        "file": "templates/overall_footer_end.html",
+        "mode": "replace" 
+      }, {
+        "id": "overall_footer_begin",
+        "label": "Overall Footer Begin",
+        "file": "templates/overall_footer_begin.html",
+        "mode": "replace" 
+      }, {
+        "id": "index_body",
+        "label": "Index Body",
+        "file": "templates/index_body.html",
+        "mode": "replace" 
+      }, {
+        "id": "index_box",
+        "label": "Forums List",
+        "file": "templates/index_box.html",
+        "mode": "replace" 
+      }, {
+        "id": "memberlist_body",
+        "label": "Memberlist Body",
+        "file": "templates/memberlist_body.html",
+        "mode": "replace" 
+      }, {
+        "id": "viewforum_body",
+        "label": "Viewforum Body",
+        "file": "templates/viewforum_body.html",
+        "mode": "replace" 
+      }, {
+        "id": "viewonline_body",
+        "label": "Viewonline Body",
+        "file": "templates/viewonline_body.html",
+        "mode": "replace" 
+      }, {
+        "id": "viewtopic_body",
+        "label": "Viewtopic Body",
+        "file": "templates/viewtopic_body.html",
+        "mode": "replace" 
+      }],
+
+    "widgets": [{
+        "id": "forum_stats",
+        "label": "Forum Stats Widgets",
+        "file": "blocks/forum_stats.html",
+        "targetMarker": "footer_widgets",
+        "mode": "append"
+    }, {
+        "id": "whois_online",
+        "label": "Who Is Online Widgets",
+        "file": "blocks/who_is_online.html",
+        "targetMarker": "footer_widgets",
+        "mode": "append"
+    }, {
+        "id": "top_posters",
+        "label": "Top Posters Widgets",
+        "file": "sidebar/top_posters.html",
+        "targetMarker": "sidebar_widgets",
+        "mode": "append"
+    }, {
+        "id": "recent_topics",
+        "label": "Recent Topics Widgets",
+        "file": "sidebar/recent_topics.html",
+        "targetMarker": "sidebar_widgets",
+        "mode": "append"
+    }]
+  },
+
+  "changelog": [
+    "- 1.0.0: Prima versiune IPS Inspired."
+  ]
+}
