@@ -1,9 +1,9 @@
 {
   "id": "ips",
-  "name": "IPS Inspired",
-  "version": "1.0.0",
+  "name": "IPS Inspired v2.1",
+  "version": "1.0.2",
   "author": "Staark",
-  "description": "Tema în stil IPS 4/5 pentru Forumotion.",
+  "description": "Tema în stil IPS 4.5.x pentru Forumotion.",
   "tags": ["modern", "ips", "light"],
   "minEngine": "Invision",
   "screenshot": "themes/ips/screenshot.svg",
@@ -17,7 +17,19 @@
         "target": "global_stylesheet"
     }],
 
-    "js": [],
+    "js": [{
+      "main": [{
+          "id": "ips",
+          "label": "Initialize Theme",
+          "file": "",
+          "target": "global_javascript"
+      }, {
+          "id": "ips21",
+          "label": "Custom Navigation",
+          "file": "",
+          "target": "theme_javascript"
+      }]
+    }],
 
     "templates": [{
         "id": "overall_header",
@@ -64,6 +76,26 @@
         "label": "Viewtopic Body",
         "file": "templates/viewtopic_body.html",
         "mode": "replace" 
+      },{
+        "id": "profile_advanced_body",
+        "label": "Profile display page",
+        "file": "templates/profile/profile_advanced_body.html",
+        "mode": "replace"
+      },{
+        "id": "privmsgs_body",
+        "label": "Private message list",
+        "file": "templates/posting_messages/privmsgs_body.html",
+        "mode": "replace"
+      },{
+        "id": "privmsgs_preview",
+        "label": "Preview a private message",
+        "file": "templates/posting_messages/privmsgs_preview.html",
+        "mode": "replace"
+      },{
+        "id": "privmsgs_read_body",
+        "label": "Displaying a private message",
+        "file": "templates/posting_messages/privmsgs_read_body.html",
+        "mode": "replace"
       }],
 
     "widgets": [{
