@@ -3,7 +3,7 @@
   "themes": [
     {
       "id": "ips",
-      "name": "IPS Inspired",
+      "name": "IPS Inspired v2.1",
       "description": "Tema în stil IPS 4/5 pentru Forumotion.",
       "path": "themes/ips",
       "manifest": "themes/ips/manifest.json",
