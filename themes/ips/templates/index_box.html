@@ -1,130 +1,78 @@
-{JAVASCRIPT}
-<!-- BEGIN switch_on_index -->
-<nav class="ipsBreadcrumb ipsBreadcrumb_top ipsFaded_withHover">
-  <ul data-role="breadcrumbList">
-    <li>
-      <a title="Home" href="{U_INDEX}">
-        <span>Home</span>
-      </a>
-    </li>
-    {NAV_CAT_DESC}
-  </ul>
-  
-  <ul class="ipsList_inline ipsPos_right">
-    <!-- BEGIN switch_user_logged_in -->
-    <li>
-      <a data-action="defaultStream" class="ipsType_light" href="{U_TODAY_ACTIVE}"><i class="fa fa-newspaper" aria-hidden="true"></i> <span>Unread Content</span></a>
-    </li>
-    <li>
-      <a data-action="markSiteRead" class="ipsType_light" href="{U_MARK_READ}" title="Mark all content on the site as read" data-ipstooltip=""><i class="fa fa-check" aria-hidden="true"></i> Mark site read</a>
-    </li>
-    <!-- END switch_user_logged_in -->
-    
-    <li>
-      <a data-action="defaultStream" class="ipsType_light<!-- BEGIN switch_user_logged_in --> cUserConnected<!-- END switch_user_logged_in -->" href="{U_TODAY_ACTIVE}"><i class="fa fa-newspaper" aria-hidden="true"></i> <span>All Activity</span></a>
-    </li>
-  </ul>
-</nav>
-<!-- END switch_on_index -->
+<section>
+  <ol class="ipsList_reset cForumList" data-baseurl="">
+  <!-- BEGIN catrow -->
+	<!-- BEGIN tablehead -->
+                  <li data-categoryid="{catrow.tablehead.ID}" class="cForumRow ipsBox ipsSpacer_bottom ipsResponsive_pull">
+                    <h2 class="ipsType_sectionTitle ipsType_reset cForumTitle">
+                      	<a href="{catrow.tablehead.ID}">{catrow.tablehead.L_FORUM}</a>
+                        <a href="#" class="ipsPos_right ipsJS_show ipsType_noUnderline cForumToggle" onclick="app.toggleCategory('{catrow.tablehead.ID}'); return false;" data-action="toggleCategory" data-ipstooltip="" title="Toggle this category"></a>
+                    </h2>
+                    
+                    <ol class="ipsDataList ipsDataList_large ipsDataList_zebra" data-role="forums">
+                <!-- END tablehead -->
+                <!-- BEGIN forumrow -->
+		<li class="cForumRow ipsDataItem ipsDataItem_responsivePhoto ipsClearfix" data-forumid="{catrow.forumrow.FORUM_ID}">
+                  <div class="ipsDataItem_icon ipsDataItem_category">
+                    <span class="ipsItemStatus ipsItemStatus_large cForumIcon_normal ipsItemStatus_read">
+                      <i class="fa fa-comments"></i>
+                    </span>
+                  </div>
+                  
+                  <div class="ipsDataItem_main">
+                    <h4 class="ipsDataItem_title ipsType_break">
+                      <a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a>
+                      <div class="ipsType_richText ipsDataItem_meta ipsContained" data-controller="core.front.core.lightboxedImages">
+                        {catrow.forumrow.FORUM_DESC}
+                      </div>
+                    </h4>
+                  </div>
+                  
+                  <div class="ipsDataItem_stats ipsDataItem_statsLarge">
+                    <dl>
+                      <dt class="ipsDataItem_stats_number">{catrow.forumrow.POSTS}</dt>
+                      <dd class="ipsDataItem_stats_type ipsType_light"> post</dd>
+                    </dl>
+                  </div>
+                  
+                  <ul class="ipsDataItem_lastPoster ipsDataItem_withPhoto">
+                    <li>
+                      <!-- BEGIN avatar -->
+                      <a href="#" rel="nofollow" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to Admin's profile">
+                        {catrow.forumrow.avatar.LAST_POST_AVATAR}
+                      </a>
+                      <!-- END avatar -->
+                    </li>
+                    <li class="ipsDataItem_lastPoster__title">
+                        <!-- BEGIN switch_topic_title -->
+                        <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a>
+                        <!-- END switch_topic_title -->
+                    </li>
+                    <li class="ipsType_light ipsType_blendLinks">
+			{catrow.forumrow.USER_LAST_POST}
+                    </li>
+                 </ul>
+                <script type="text/javascript">
+                    //<![CDATA[
+                        window.app.setRowsData('{catrow.forumrow.POSTS}');
+                    //]]>
+                </script>
+          </li>
+    <!-- END forumrow -->
+    <!-- BEGIN tablefoot -->
+    </ol>
+</li>
+    <!-- END tablefoot -->
+    <!-- END catrow -->
+    </ol>
+</section>
 
-<!-- BEGIN switch_user_logged_in -->
-<div class="ipsPageHeader ipsClearfix ipsMargin_bottom cForumHeader ipsHeaderButtons ipsFlex ipsFlex-ai:center ipsFlex-jc:between">
-  <h1 class="ipsType_pageTitle ipsFlex-flex:11 ipsType_break">
-    Forums
-  </h1>
-  <ul class="ipsToolList ipsToolList_horizontal ipsClearfix sm:ipsPos_none sm:ipsMargin:none ipsFlex-flex:00">
-    <li class="ipsToolList_primaryAction ipsResponsive_hidePhone">
-      <a class="faButton faButton_medium faButton_important" href="#" data-ipsdialog="" data-ipsdialog-size="narrow" data-ipsdialog-title="Select Forum">Start new topic</a>
-    </li>
-  </ul>
-</div>
-<!-- END switch_user_logged_in -->
-
-<!-- BEGIN message_admin_index -->
-	<div class="newslink">
-	<p class="date">{LAST_VISIT_DATE}</p>
-	<!-- BEGIN message_admin_titre -->
-		<div class="h3">{message_admin_index.message_admin_titre.MES_TITRE}</div>
-	<!-- END message_admin_titre -->
-
-	<!-- BEGIN message_admin_txt -->
-		<p>{message_admin_index.message_admin_txt.MES_TXT}</p>
-	<!-- END message_admin_txt -->
+<!-- BEGIN switch_forum_images -->
+<div class="borderwrap">
+	<div class="maintitle floated">
+		<h3>{switch_forum_images.TITLE}</h3>
 	</div>
-<!-- END message_admin_index -->
-
-{CHATBOX_TOP}
-{BOARD_INDEX}
-
-<div class="cWidgetContainer " data-role="widgetReceiver" data-orientation="horizontal" data-widgetarea="footer">
-  <ul class="ipsList_reset">
-    <li data-blockid="app_core_stats" data-blocktitle="Member Statistics" class="ipsWidget ipsBox ipsWidget_horizontal" animating="false" style="">
-      <h3 class="ipsType_reset faWidget_title">Member Statistics</h3>
-      <div class="ipsWidget_inner">
-        <div class="faFlex al:center jc:between sm:column sm:stretch ipsPadding faWidget_stats">
-          <div class="faFlex-flex:11 faFlex al:center jc:around">
-            
-            <div class="ipsType_center">
-              <span class="ipsType_large ipsWidget_statsCount" data-stats-users></span><br />
-              <span class="ipsType_light ipsType_medium">Total Members</span>
-            </div>
-            
-            <div class="ipsType_center">
-              <span class="ipsType_large ipsWidget_statsCount" title="" data-stats-online></span><br />
-              <span class="ipsType_light ipsType_medium">Most Online</span>
-            </div>
-          </div>
-          <div class="faFlex-flex:01 faBorder_left faPadding_left faMargin_right:double" data-stats-lastuser>
-          </div>
-        </div>
-      </div>
-    </li>
-    <!-- BEGIN disable_viewonline -->
-    <li class="faWidget faWidget_horizontal ipsBox">
-      <div>
-        <h3 class="ipsType_reset faWidget_title">
-          <span class="faFlex:data-between-wrap-center">
-            <span>
-              Who's Online&nbsp;&nbsp;
-              <span class="ipsType_light ipsType_unbold ipsType_medium">
-                <span data-membercount="0"></span>
-              </span>
-            </span>
-            <span class="ipsType_medium ipsType_light ipsType_unbold ipsType_blendLinks">
-              <!-- BEGIN switch_viewonline_link -->
-              <a href="{U_VIEWONLINE}">(See full list)</a>
-              <!-- END switch_viewonline_link -->
-            </span>
-          </span>
-        </h3>
-        <div class="ipsWidget_inner ipsPadding">
-          <ul class="ipsList_inline ipsList_csv ipsList_noSpacing ipsType_normal">
-            <li class="ipsType_reset ipsType_medium ipsType_light" data-noneonline="">
-              
-            </li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <!-- END disable_viewonline -->
-  </ul>
+	<div class="container-imgs-list" style="max-height: 500px" id="imageList">
+        {switch_forum_images.SCRIPTS}
+	</div>
 </div>
- 
-<script type="text/javascript">
-//<![CDATA[
-  window.FA_Theme.vars('stats_widget', {
-    show_stats_widget: true,
-    show_whois_widget: true,
-  
-    stats: {
-      total_users: '{TOTAL_USERS}',
-      most_users:  '{RECORD_USERS}',
-      latest_user: '{NEWEST_USER}',
-      total_online: '{TOTAL_USERS_ONLINE}',
-      online_users: '{LOGGED_IN_USER_LIST}'
-    },
-  });
-//]]>
-</script>
-{CHATBOX_BOTTOM}
-{AUTO_DST}
+<!-- END switch_forum_images -->
