@@ -35,66 +35,79 @@
         "id": "overall_header",
         "label": "Overall Header",
         "file": "templates/overall_header.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "overall_footer_end",
         "label": "Overall Footer End",
         "file": "templates/overall_footer_end.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "overall_footer_begin",
         "label": "Overall Footer Begin",
         "file": "templates/overall_footer_begin.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "index_body",
         "label": "Index Body",
         "file": "templates/index_body.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "index_box",
         "label": "Forums List",
         "file": "templates/index_box.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "memberlist_body",
         "label": "Memberlist Body",
         "file": "templates/memberlist_body.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "viewforum_body",
         "label": "Viewforum Body",
         "file": "templates/viewforum_body.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "viewonline_body",
         "label": "Viewonline Body",
         "file": "templates/viewonline_body.html",
+        "category": "main",
         "mode": "replace" 
       }, {
         "id": "viewtopic_body",
         "label": "Viewtopic Body",
         "file": "templates/viewtopic_body.html",
+        "category": "main",
         "mode": "replace" 
       },{
         "id": "profile_advanced_body",
         "label": "Profile display page",
         "file": "templates/profile/profile_advanced_body.html",
+        "category": "profil",
         "mode": "replace"
       },{
         "id": "privmsgs_body",
         "label": "Private message list",
         "file": "templates/posting_messages/privmsgs_body.html",
+        "category": "post",
         "mode": "replace"
       },{
         "id": "privmsgs_preview",
         "label": "Preview a private message",
         "file": "templates/posting_messages/privmsgs_preview.html",
+        "category": "post",
         "mode": "replace"
       },{
         "id": "privmsgs_read_body",
         "label": "Displaying a private message",
         "file": "templates/posting_messages/privmsgs_read_body.html",
+        "category": "post",
         "mode": "replace"
       }],
 
